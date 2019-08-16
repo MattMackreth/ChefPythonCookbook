@@ -24,5 +24,7 @@ describe 'python::default' do
       expect { chef_run }.to install package 'python_pip'
     end
 
+
+
   end
 end
