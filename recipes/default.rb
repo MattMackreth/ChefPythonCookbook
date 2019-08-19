@@ -6,6 +6,7 @@
 
 package 'python'
 package 'python-pip'
+package 'libncurses5-dev'
 
 execute 'pip_install' do
   command 'pip install --upgrade pip'
