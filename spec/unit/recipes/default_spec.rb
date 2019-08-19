@@ -17,14 +17,12 @@ describe 'python::default' do
     end
 
     it 'installs python' do
-      expect { chef_run }.to install package 'python3'
+      expect { chef_run }.to install_package('python')
     end
 
     it 'installs pip' do
-      expect { chef_run }.to install package 'python_pip'
+      expect { chef_run }.to install_package('python-pip')
     end
-
-
 
   end
 end

@@ -4,6 +4,10 @@
 #
 # Copyright:: 2019, The Authors, All Rights Reserved.
 
-include_recipe 'poise-python'
+package 'python'
+package 'python-pip'
 
-pip_requirements 'requirements.txt'
+execute 'pip_install' do
+  command 'pip  install -r ~/uberapp/requirements.txt'
+  command 'py'
+end
