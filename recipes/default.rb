@@ -8,5 +8,6 @@ package 'python'
 package 'python-pip'
 
 execute 'pip_install' do
+  command 'pip install --upgrade pip'
   command 'pip  install -r /home/vagrant/uberapp/requirements.txt'
 end
