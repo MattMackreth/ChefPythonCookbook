@@ -9,5 +9,5 @@ package 'python-pip'
 
 execute 'pip_install' do
   command 'pip  install -r ~/uberapp/requirements.txt'
-  command 'py'
+  command 'python app.py'
 end
